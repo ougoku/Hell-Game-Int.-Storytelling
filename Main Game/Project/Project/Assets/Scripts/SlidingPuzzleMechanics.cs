@@ -119,6 +119,36 @@ public class slidingPuzzleMechanics: MonoBehaviour
 			}
 		}
 	}
+	void Update()
+	{
+		//check if game is complete 
+        bool isComplete = isGameComplete();
+        if (isComplete == true)
+        {
+            gameTransform.gameObject.SetActive(false);
+            fullImage.SetActive(true);
+        }
+	}
+	//check if game is complete
+	private bool isGameComplete()
+	{
+		//iterate through game pieces and if they have the correct sprites then game is completed
+		for (int i = 0; i < listOfPieces.Count; i++)
+		{
+			//breaking this up into different variables so i don't have some egregiously long single variable
+			int numberIndex = tileSprites[i].name.Length - 1;
+			string currentTileSprite = listOfPieces[i].gameObject.GetComponent<SpriteRenderer>().sprite.name;
+			int spriteNumber = int.Parse(currentTileSprite.Substring(numberIndex));
+
+			Debug.Log("Tile " + i + " has sprite " + spriteNumber);
+			//if the current tile != sprite number then game isn't complete
+			if(i != spriteNumber)
+			{
+				return false;
+			}
+		}
+		return true;
+	}
 	public List<Transform> getTileList()
 	{
 		return this.listOfPieces;

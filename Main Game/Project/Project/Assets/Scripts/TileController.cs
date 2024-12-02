@@ -100,13 +100,6 @@ public class TileController : MonoBehaviour
                     }
                 }
             }
-            //check if game is complete after each move (doing this in the update function would be pretty wasteful)
-            bool isComplete = isGameComplete();
-            if (isComplete == true)
-            {
-                puzzleObject.SetActive(false);
-                fullImage.SetActive(true);
-            }
        }
     }
 
@@ -132,26 +125,5 @@ public class TileController : MonoBehaviour
             return true;
         }
         return false;
-    }
-
-    //check if game is complete
-    private bool isGameComplete()
-    {
-        //iterate through game pieces and if they have the correct sprites then game is completed
-        for (int i = 0; i < listOfPieces.Count; i++)
-        {
-            //breaking this up into different variables so i don't have some egregiously long single variable
-            int numberIndex = tileSprites[i].name.Length - 1;
-            string currentTileSprite = listOfPieces[i].gameObject.GetComponent<SpriteRenderer>().sprite.name;
-            int spriteNumber = int.Parse(currentTileSprite.Substring(numberIndex));
-
-            Debug.Log("Tile " + i + " has sprite " + spriteNumber);
-            //if the current tile != sprite number then game isn't complete
-            if(i != spriteNumber)
-            {
-                return false;
-            }
-        }
-        return true;
     }
 } 
