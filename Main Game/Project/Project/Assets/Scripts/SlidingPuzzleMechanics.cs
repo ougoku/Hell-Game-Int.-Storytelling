@@ -67,18 +67,19 @@ public class slidingPuzzleMechanics: MonoBehaviour
 		Debug.Log("Sprites: "+ tileSprites[0] + tileSprites[1] + tileSprites[2] + tileSprites[3] + tileSprites[4] + tileSprites[5] + tileSprites[6] + tileSprites[7] + tileSprites[8]);
 		for (int i = 0; i < tileSprites.Length - 1; i++) 
 		{
-            for (int j = i + 1; j < tileSprites.Length; j++) 
+            		for (int j = i + 1; j < tileSprites.Length; j++) 
 			{
 				//grabs the int value of the sprite name for comparisons
 				int numberIndex = tileSprites[i].name.Length - 1; //last char of sprite name is a # that ids which one it is
 				int iString = int.Parse(tileSprites[i].name.Substring(numberIndex));
 				int jString = int.Parse(tileSprites[j].name.Substring(numberIndex));
-                if ((iString != 8 && jString != 8) && (iString > jString))
+    
+                		if ((iString != 8 && jString != 8) && (iString > jString))
 				{
 					inversionCount++;
 				}
-            }
-        }
+            		}
+        	}
 		Debug.Log("Inversion Count: " + inversionCount);
 		return inversionCount;
 	}
@@ -122,12 +123,12 @@ public class slidingPuzzleMechanics: MonoBehaviour
 	void Update()
 	{
 		//check if game is complete 
-        bool isComplete = isGameComplete();
-        if (isComplete == true)
-        {
-            gameTransform.gameObject.SetActive(false);
-            fullImage.SetActive(true);
-        }
+        	bool isComplete = isGameComplete();
+		if (isComplete == true)
+		{
+		    gameTransform.gameObject.SetActive(false);
+		    fullImage.SetActive(true);
+		}
 	}
 	//check if game is complete
 	private bool isGameComplete()
@@ -140,7 +141,7 @@ public class slidingPuzzleMechanics: MonoBehaviour
 			string currentTileSprite = listOfPieces[i].gameObject.GetComponent<SpriteRenderer>().sprite.name;
 			int spriteNumber = int.Parse(currentTileSprite.Substring(numberIndex));
 
-			Debug.Log("Tile " + i + " has sprite " + spriteNumber);
+			//Debug.Log("Tile " + i + " has sprite " + spriteNumber);
 			//if the current tile != sprite number then game isn't complete
 			if(i != spriteNumber)
 			{
@@ -149,6 +150,8 @@ public class slidingPuzzleMechanics: MonoBehaviour
 		}
 		return true;
 	}
+
+ 	//accessors for TileController 
 	public List<Transform> getTileList()
 	{
 		return this.listOfPieces;
