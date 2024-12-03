@@ -2,22 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//script referenced from this [https://www.youtube.com/watch?v=IgBjJ-bexeo] youtube video
+//script loosely referenced from this [https://www.youtube.com/watch?v=IgBjJ-bexeo] youtube video
 
 public class slidingPuzzleMechanics: MonoBehaviour
 {
-	//reference to gameboard transform
-	public Transform gameTransform;
-	//reference to gamepiece transform
+	//reference to gameboard transform (you can drag the gameboard gameobject in here from the inspector tab)
+	public Transform gameboardTransform;
+	//reference to gamepiece transform (you can drag the prefab in here from the inspector tab)
 	public Transform piecePrefabTransform;
 	//list to hold all tile pieces
 	public List<Transform> listOfPieces;
+ 	//list to hold all the different tile sprites
 	public Sprite[] tileSprites;
 	//holds the empty slot in puzzle
 	public int emptyLocation;
 	//sets size of the game (int x int)
 	public int boardSize;
 	private float borderThickness;
+ 	//holds the full tile image that appears when the game is completed
 	public GameObject fullImage;
 
 	public Vector3 mouseToObjectDistance;
@@ -60,11 +62,12 @@ public class slidingPuzzleMechanics: MonoBehaviour
 	}
 
 	//iterates through sprite array and counts how many inversions there are
-	//thankfully since the array is relatively small then this won't be too memory intensive
+ 	//function referenced from this lovely geeksforgeeks article [https://www.geeksforgeeks.org/check-instance-15-puzzle-solvable/]
 	private int checkValidPuzzle()
 	{
 		int inversionCount = 0;
-		Debug.Log("Sprites: "+ tileSprites[0] + tileSprites[1] + tileSprites[2] + tileSprites[3] + tileSprites[4] + tileSprites[5] + tileSprites[6] + tileSprites[7] + tileSprites[8]);
+  		//lil print test to print out the sprites after they got shuffled and before the inversions get counted
+		//Debug.Log("Sprites: "+ tileSprites[0] + tileSprites[1] + tileSprites[2] + tileSprites[3] + tileSprites[4] + tileSprites[5] + tileSprites[6] + tileSprites[7] + tileSprites[8]);
 		for (int i = 0; i < tileSprites.Length - 1; i++) 
 		{
             		for (int j = i + 1; j < tileSprites.Length; j++) 
@@ -80,7 +83,7 @@ public class slidingPuzzleMechanics: MonoBehaviour
 				}
             		}
         	}
-		Debug.Log("Inversion Count: " + inversionCount);
+		//Debug.Log("Inversion Count: " + inversionCount);
 		return inversionCount;
 	}
 
@@ -96,7 +99,7 @@ public class slidingPuzzleMechanics: MonoBehaviour
 			for (int col = 0; col < boardSize; col++)
 			{
 				//creates each game piece :^)
-				Transform newPiece = Instantiate(piecePrefabTransform, gameTransform);
+				Transform newPiece = Instantiate(piecePrefabTransform, gameboardTransform);
 				//add new piece to list
 				listOfPieces.Add(newPiece);
 				//assign sprite to the piece
@@ -104,6 +107,7 @@ public class slidingPuzzleMechanics: MonoBehaviour
 				tileIndex++;
 
 				//place each piece onto the gameboard (gameboard will go from -1 to +1 along the x axis for it to be centered)
+    				//i tweaked the measurements a little and now this only really works if your full tile image is 1064x1064 before it gets split up otherwise the positioning is off
 				newPiece.localPosition = new Vector3(-1 + (2 * boardSize * col) + borderThickness, +1 - (2 * boardSize * row) - borderThickness, 0);
 
 				//scale the piece
@@ -111,7 +115,7 @@ public class slidingPuzzleMechanics: MonoBehaviour
 				//name each piece using its index in the puzzle
 				newPiece.name = $"{(row * boardSize) + col}";
 
-				//covers the case of the empty space. we'll put it in the bottom right corner
+				//covers the case of the empty space.
 				if ((row == boardSize - 1) && (col == boardSize - 1))
 				{
 					emptyLocation = (boardSize * boardSize) - 1;
@@ -126,7 +130,7 @@ public class slidingPuzzleMechanics: MonoBehaviour
         	bool isComplete = isGameComplete();
 		if (isComplete == true)
 		{
-		    gameTransform.gameObject.SetActive(false);
+		    gameboardTransform.gameObject.SetActive(false);
 		    fullImage.SetActive(true);
 		}
 	}
