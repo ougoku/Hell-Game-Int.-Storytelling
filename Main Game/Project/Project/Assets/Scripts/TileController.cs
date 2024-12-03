@@ -6,7 +6,7 @@ public class TileController : MonoBehaviour
 {
     //create a Vector2 variable (xy) and call it mousePosition. 
     public Vector2 mousePosition;
-	public Vector3 objectPosition;
+    public Vector3 objectPosition;
     //tracks the position of the mouse during gameplay
     public Vector2 hotSpot = Vector2.zero;
     //goes along with the setting in PlaySettings
@@ -116,7 +116,7 @@ public class TileController : MonoBehaviour
         //check if target tile is in range of the exisiting tiles and that the target is empty
         if(0 <= targetTileIndex && targetTileIndex < listOfPieces.Count && listOfPieces[targetTileIndex].gameObject.activeSelf == false)
         {
-            Debug.Log("Tile " + targetTileIndex + " is free to swap");
+            //Debug.Log("Tile " + targetTileIndex + " is free to swap");
             //swap their sprites
 			(listOfPieces[currentTileIndex].gameObject.GetComponent<SpriteRenderer>().sprite, listOfPieces[targetTileIndex].gameObject.GetComponent<SpriteRenderer>().sprite) = (listOfPieces[targetTileIndex].gameObject.GetComponent<SpriteRenderer>().sprite, listOfPieces[currentTileIndex].gameObject.GetComponent<SpriteRenderer>().sprite);
             //set the current tile as inactive and target tile as active
