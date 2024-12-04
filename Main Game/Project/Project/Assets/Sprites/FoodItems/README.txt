@@ -1,0 +1,1 @@
+Sprites without "HG" in them are more pixelated and have colored outlines to better match the game's art style.
