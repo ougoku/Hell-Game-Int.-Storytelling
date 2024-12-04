@@ -21,7 +21,9 @@ public class slidingPuzzleMechanics: MonoBehaviour
 	private float borderThickness;
  	//holds the full tile image that appears when the game is completed
 	public GameObject fullImage;
-
+ 	//holds the mirror object so that when the puzzle is complete, then this is set active for the player to collect
+	public GameObject LustMirror;
+ 
 	public Vector3 mouseToObjectDistance;
 	public Vector3 mousePosition;
 
@@ -132,6 +134,8 @@ public class slidingPuzzleMechanics: MonoBehaviour
 		{
 		    gameboardTransform.gameObject.SetActive(false);
 		    fullImage.SetActive(true);
+		    //make the mirror visible so player can collect it
+		    LustMirror.SetActive(true);
 		}
 	}
 	//check if game is complete
