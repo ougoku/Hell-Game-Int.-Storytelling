@@ -20,8 +20,17 @@ public class SceneChanger : MonoBehaviour
     }
     public void GameOver()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
 
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(4);
+    }
+    public void Quit()
+    {
+        Application.Quit();
     }
   
 }

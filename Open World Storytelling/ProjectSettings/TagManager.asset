@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -13,9 +14,9 @@ TagManager:
   - UI
   - Wall
   - Floor
-  - 
-  - 
-  - 
+  - SpriteChat
+  - UIChat
+  - UI
   - 
   - 
   - 
@@ -46,6 +47,9 @@ TagManager:
     locked: 0
   - name: Midground
     uniqueID: 3615349967
+    locked: 0
+  - name: MidForeground
+    uniqueID: 2584476917
     locked: 0
   - name: Foreground
     uniqueID: 3729496639

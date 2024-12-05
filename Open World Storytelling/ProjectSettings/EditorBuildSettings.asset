@@ -5,28 +5,46 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MovementTypes.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Collectibles.unity
     guid: 9177400d4d8b6e8419ff3c14b34a1ec7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WhiteVoid.unity
     guid: 78340cb5b1b60444e9d88a8bab0bc79b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SceneChangeTown.unity
     guid: c88d07225814d86408397a367d7176ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Smithy.unity
     guid: 97b4744435565ce4eb8d9f7a8d586c00
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/House 1.unity
     guid: 03f0b768df4d4624c8b8f9b01b548999
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/House 2.unity
     guid: 68ac111bbf1692f4b85f06cf11ff0ace
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/House 3.unity
     guid: c1ecedc87dbbd854796b5eeb04002970
+  - enabled: 1
+    path: Assets/Scenes/Level1 (Lust).unity
+    guid: dbcf4361e13233a44bdfe7cbe6027bd9
+  - enabled: 1
+    path: Assets/Scenes/LustBoss.unity
+    guid: 303d36ce40ad8d2408e9f6affac3d69b
+  - enabled: 1
+    path: Assets/Scenes/LustBoss(postcollected).unity
+    guid: 2c5790f6432b773428d467acbb565991
+  - enabled: 1
+    path: Assets/Scenes/Gameover.unity
+    guid: 1045aba1a049fec45b4738d4cf2a6841
+  - enabled: 1
+    path: Assets/Scenes/Level2Gluttony.unity
+    guid: 646f3ff5b01bfa54cb4dcbd51a822368
+  - enabled: 1
+    path: Assets/Scenes/Gluttonyfinalboss.unity
+    guid: 34f26d8c12fb7124d92d5db4dc368197
   m_configObjects: {}
