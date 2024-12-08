@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Mainmenu.unity
+    path: Assets/Scenes/Title.unity
     guid: 9617bbd2b6ad2c641b2a55abbe4eafb8
   - enabled: 1
     path: Assets/Scenes/Level1 (Lust).unity
@@ -15,18 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/LustSecretRoom.unity
     guid: c09a6e46372a788428c96a96c97707d4
   - enabled: 1
-    path: Assets/Scenes/LustBoss(postcollected).unity
-    guid: 2c5790f6432b773428d467acbb565991
-  - enabled: 1
-    path: Assets/Scenes/LustPreBoss.unity
-    guid: 864ded18ce14c3749a95f8d7863a5c00
-  - enabled: 1
-    path: Assets/Scenes/LustBoss.unity
-    guid: 303d36ce40ad8d2408e9f6affac3d69b
-  - enabled: 1
     path: Assets/Scenes/Gameover.unity
     guid: 1045aba1a049fec45b4738d4cf2a6841
-  - enabled: 1
-    path: Assets/Scenes/EndScene (Good).unity
-    guid: 15575f8e349e5bd45b535acc158af40b
   m_configObjects: {}
