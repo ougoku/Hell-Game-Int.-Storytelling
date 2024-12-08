@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1805729878674163881}
   m_Layer: 5
   m_Name: InventorySlot
-  m_TagString: Interactable
+  m_TagString: Inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1375481855
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -101,6 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactiveCursor: {fileID: 2800000, guid: 610feee2bbc22b845abe1211c3beaca8, type: 3}
   defaultCursor: {fileID: 2800000, guid: 5f85d6c79b2f32147b1abe49e4cde619, type: 3}
+  heartParticles: {fileID: 0}
+  playerReference: {fileID: 0}
 --- !u!61 &8235352511065578763
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -130,7 +132,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.42592594}
@@ -175,7 +177,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.42592594}

@@ -25,6 +25,8 @@ public class InventorySlot : MonoBehaviour
     //variable to store initial object position so it can snap back later 
     private Vector3 startPos;
     public float objectToStartDistance;
+    public Sprite slotSprite;
+    public ParticleSystem heartParticles;
 
     // Start is called before the first frame update
     void Start()
@@ -34,9 +36,11 @@ public class InventorySlot : MonoBehaviour
     }
     void Update()
     {
+        slotSprite = this.GetComponent<SpriteRenderer>().sprite;
+
         //distance = object position - mouse position
         mouseToObjectDistance = Vector3.Distance(transform.position,mousePosition); 
-        objectToStartDistance = Vector3.Distance(transform.position,startPos); 
+        objectToStartDistance = Vector3.Distance(transform.localPosition,startPos); 
         //take the position of the mouse and assigns it to the Vector2 variable
         mousePosition = Input.mousePosition;           
         //get the location of the mouse and constrain it to the camera
@@ -64,30 +68,66 @@ public class InventorySlot : MonoBehaviour
         if(!Input.GetMouseButton(0))
         {
             Cursor.SetCursor(defaultCursor, hotSpot, cursorMode);
+
+            int numberIndex = this.name.Length - 1; //last char of sprite name is a # that ids which one it is
+            //gets the number index of the current inventory slot
+		    int listMarker = int.Parse(this.name.Substring(numberIndex));
+
+            //grab the gameobject we wanna toss out our inventory
+            GameObject target = Inventory._items[listMarker].currentItem;
+
             //snap the object back into the inventory slot if it's still relatively close'
-            if(objectToStartDistance <= mouseDistance)
+            if(objectToStartDistance <= 2)
             {
                 this.transform.localPosition = startPos;
             }
             //if it's far then just plop it back out into the world'
             else
             {
-                int numberIndex = this.name.Length - 1; //last char of sprite name is a # that ids which one it is
-                //gets the number index of the current inventory slot
-		        int listMarker = int.Parse(this.name.Substring(numberIndex));
-                //set the inventory item icon and bool value to false/null (so we can)
-                Inventory._items[listMarker].icon = null;
-                Inventory._items[listMarker].hasCollected = false;
-                //grab the gameobject we wanna toss out our inventory
-                GameObject target = Inventory._items[listMarker].currentItem;
-                //make it active again and put it where we toss it
-                target.SetActive(true);
-                target.transform.position = this.transform.position;
+                if (target != null)
+                {
+                    //make it active again and put it where we toss it
+                    target.transform.position = this.transform.position;
+                    target.SetActive(true);
+
+                    //empty inventory slot
+                    emptyPlayerInventorySlot(listMarker);
+                    //get rid of sprite in item slot
+                    this.GetComponent<SpriteRenderer>().sprite = null;
+                }
                 //snap the now empty inventory slot back into the frame
                 this.transform.localPosition = startPos;
                 
             }
         }
         
+    }
+    private void OnTriggerEnter2D(Collider2D player)
+    {
+        if (player.tag == "Player")
+        {
+            //iterate through player inventory to find corresponding gameobject
+            for (int i = 0; i < Inventory._items.Length; i++)
+            {
+                if(Inventory._items[i].icon == slotSprite && Inventory._items[i].currentItem.tag == "Food")
+                {
+                     Debug.Log("yummery");
+                     this.GetComponent<SpriteRenderer>().sprite = null;
+                     //activate heart particle System
+                     heartParticles.Play();
+                     //deactivate the object so that she "eats" it
+                     Inventory._items[i].currentItem.SetActive(false);
+                     emptyPlayerInventorySlot(i);
+                     
+                }
+            }
+        }
+    }
+    private void emptyPlayerInventorySlot(int itemIndex)
+    {
+        Inventory._items[itemIndex].itemName = "None";
+        Inventory._items[itemIndex].hasCollected = false;
+        Inventory._items[itemIndex].icon = null;
+        Inventory._items[itemIndex].currentItem = null;
     }
 }

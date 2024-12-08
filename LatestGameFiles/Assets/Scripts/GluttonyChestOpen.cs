@@ -8,7 +8,7 @@ public class GluttonyChestOpen : MonoBehaviour
 	private AudioSource audioSource; 
 	//create array to store sound
 	public AudioClip[] chestAudioClips; 
-
+    public bool hasOpened;
     //holds whatever food item is supposed to come from this chest
     //also for best results, make the food item starting point where you want it to land so that when the animation stops,
     //it will stay in the landing spot instead of launching back into the chest
@@ -21,7 +21,7 @@ public class GluttonyChestOpen : MonoBehaviour
         gluttonyChestAnimator = GetComponent<Animator>();
         //when game starts, assign audio source of empty game object to priv variable AudioSource
 		audioSource = GetComponent<AudioSource>();
-        
+        hasOpened = false;
     }
 
     void OnTriggerEnter2D(Collider2D player)
@@ -32,7 +32,10 @@ public class GluttonyChestOpen : MonoBehaviour
         {
             gluttonyChestAnimator.SetBool("PlayerEnter", true);
             audioSource.PlayOneShot(chestAudioClips[0], .5f);
-            foodItem.SetActive(true);
+            if (hasOpened == false)
+            {
+                foodItem.SetActive(true);
+            }
         }
     }
     void OnTriggerExit2D(Collider2D player)
@@ -43,6 +46,11 @@ public class GluttonyChestOpen : MonoBehaviour
         {
             gluttonyChestAnimator.SetBool("PlayerEnter", false);
             audioSource.PlayOneShot(chestAudioClips[1], .5f);
+            hasOpened = true;
         }
+    }
+    public bool getOpenChestStatus()
+    {
+        return hasOpened;
     }
 }
