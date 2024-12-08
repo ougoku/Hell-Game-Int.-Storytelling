@@ -3,7 +3,11 @@ guid: e915db0713cb68446922a2ea8e34e91b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - defaultCursor: {fileID: 2800000, guid: 56d159f7a4c11f7489f3971ed12120c5, type: 3}
+  - hoverCursor: {fileID: 2800000, guid: 2358931b2e9b02b4ca1c9a380d608ab4, type: 3}
+  - clickCursor: {fileID: 2800000, guid: 66a7590491c1b424fb3320799b7d5aa5, type: 3}
+  - objectclick: {fileID: 8300000, guid: 3da2708646d0daa4ba4c39a3eb5a6bfd, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
