@@ -160,7 +160,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.3584906, g: 0.0182627, b: 0.1406992, a: 0}
+  m_BackGroundColor: {r: 0.4339623, g: 0.012281877, b: 0.16428293, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1225,7 +1225,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b0c64b342bf6af04090ef03601c8711d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2048,7 +2048,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -97, y: 0}
+  m_AnchoredPosition: {x: -96.99994, y: 0}
   m_SizeDelta: {x: -14, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1376829805
@@ -2126,7 +2126,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -89, y: 0}
+  m_AnchoredPosition: {x: -88.99994, y: 0}
   m_SizeDelta: {x: 2, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1411246761
@@ -2224,8 +2224,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use the arrow keys to move around. Items will be interacted with via mouse
-    clicks or click and drag. Try your best to solve the puzzles and have fun!
+  m_text: Use the arrow keys or WASD to move around. Items can be picked up by walking
+    over them and interacted by dragging them out of your inventory. Try your best
+    to solve the puzzles and have fun!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a48d2852b08fda3409bf6d5d53dc0b0e, type: 2}
   m_sharedMaterial: {fileID: 6607567530692220528, guid: a48d2852b08fda3409bf6d5d53dc0b0e, type: 2}
@@ -2453,7 +2454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1575777286
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2677,7 +2678,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a7aeaf6b20d962d41bf907f9dd967683, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee2e1cbd1eb38484b9c8c3d0ae3c47d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

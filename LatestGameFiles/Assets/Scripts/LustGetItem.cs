@@ -25,16 +25,15 @@ public class LustGetItem : MonoBehaviour
             }
             else
             {
+                Debug.Log("wrong thing");
                 NormalLust.SetActive(false);
-                //activate bad lust and you get the bad end lmao
                 BadLust.SetActive(true);
                 GoodLust.SetActive(false);
-                Invoke("makePit", 10.0f);
+
+                this.GetComponent<SpriteRenderer>().sprite = null;
+                
+                giantHole.SetActive(true);
             }
         }
-    }
-    private void makePit()
-    {
-        giantHole.SetActive(true);
     }
 }

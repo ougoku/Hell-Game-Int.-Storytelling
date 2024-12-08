@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\LustGetItem.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\LustGetItem.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\CheckInventorycs.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\CheckInventorycs.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\InventorySlot.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySlot.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\TileController.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\TileController.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\CollectibleItem.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\CollectibleItem.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\GluttonyChestOpen.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\GluttonyChestOpen.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\BileController.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\BileController.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\keepInventory.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\keepInventory.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\Inventory.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -29,6 +25,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\foodAppear.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\foodAppear.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\BileController.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\BileController.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\CollectibleItem.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\CollectibleItem.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\TileController.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\TileController.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,24 +46,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "foodAppear.cs",
+              "DocumentMoniker": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\foodAppear.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\foodAppear.cs",
+              "ToolTip": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\foodAppear.cs",
+              "RelativeToolTip": "Assets\\Scripts\\foodAppear.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T19:00:49.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LustGetItem.cs",
+              "DocumentMoniker": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\LustGetItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LustGetItem.cs",
+              "ToolTip": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\LustGetItem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LustGetItem.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T17:44:03.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckInventorycs.cs",
+              "DocumentMoniker": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\CheckInventorycs.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CheckInventorycs.cs",
+              "ToolTip": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\CheckInventorycs.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CheckInventorycs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T16:00:05.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\Inventory.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory.cs",
+              "ToolTip": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\Inventory.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Inventory.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T12:49:30.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "keepInventory.cs",
+              "DocumentMoniker": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\keepInventory.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\keepInventory.cs",
+              "ToolTip": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\keepInventory.cs",
+              "RelativeToolTip": "Assets\\Scripts\\keepInventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T12:33:57.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "InventorySlot.cs",
               "DocumentMoniker": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\InventorySlot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySlot.cs",
               "ToolTip": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\InventorySlot.cs",
               "RelativeToolTip": "Assets\\Scripts\\InventorySlot.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAYwG8AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAYwIYAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T05:04:54.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "BileController.cs",
               "DocumentMoniker": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\BileController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BileController.cs",
@@ -63,67 +136,34 @@
               "RelativeToolTip": "Assets\\Scripts\\BileController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:11:19.801Z"
+              "WhenOpened": "2024-12-08T04:11:19.801Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "CollectibleItem.cs",
               "DocumentMoniker": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\CollectibleItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CollectibleItem.cs",
               "ToolTip": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\CollectibleItem.cs",
               "RelativeToolTip": "Assets\\Scripts\\CollectibleItem.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwCoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T03:52:51.372Z"
+              "WhenOpened": "2024-12-08T03:52:51.372Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "TileController.cs",
               "DocumentMoniker": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\TileController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TileController.cs",
               "ToolTip": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\TileController.cs",
               "RelativeToolTip": "Assets\\Scripts\\TileController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEMAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAEMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T23:52:52.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "foodAppear.cs",
-              "DocumentMoniker": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\foodAppear.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\foodAppear.cs",
-              "ToolTip": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\foodAppear.cs",
-              "RelativeToolTip": "Assets\\Scripts\\foodAppear.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T22:11:21.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GluttonyChestOpen.cs",
-              "DocumentMoniker": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\GluttonyChestOpen.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GluttonyChestOpen.cs",
-              "ToolTip": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\GluttonyChestOpen.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GluttonyChestOpen.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACgAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T22:12:14.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\Inventory.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory.cs",
-              "ToolTip": "C:\\Users\\kinda\\Documents\\GitHub\\Hell-Game-Int.-Storytelling\\LatestGameFiles\\Assets\\Scripts\\Inventory.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T22:50:29.539Z"
+              "WhenOpened": "2024-12-07T23:52:52.215Z",
+              "EditorCaption": ""
             }
           ]
         }

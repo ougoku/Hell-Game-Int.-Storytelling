@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public GameObject[] inventorySlots = new GameObject[5];
+    
     public Item[] items;
     public static Item[] _items;
 

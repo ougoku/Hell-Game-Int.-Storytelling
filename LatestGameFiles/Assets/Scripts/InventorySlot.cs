@@ -55,7 +55,7 @@ public class InventorySlot : MonoBehaviour
 
         // keep inventory updated
         int listMarker = int.Parse(this.name.Substring(this.name.Length - 1));
-        Debug.Log("checking slot" + listMarker);
+        //Debug.Log("checking slot" + listMarker);
         checkInventory(listMarker);
     }
     void checkInventory(int listMarker)
