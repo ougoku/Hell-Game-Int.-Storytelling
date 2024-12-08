@@ -8,6 +8,21 @@ public class CollectibleItem : MonoBehaviour
     public GameObject triggeringObject;
     //item index of the object this script is on
     public int itemIndex;
+    public GameObject[] inventorySlots = new GameObject[5];
+
+
+    private void Start()
+    {
+        //set the inventory slots
+        for (int i = 0; i < inventorySlots.Length; i++)
+        {
+            if (GameObject.Find("InventorySlot" + i) != null)
+            {
+                inventorySlots[i] = GameObject.Find("InventorySlot" + i);
+                Debug.Log("adding slots");
+            }
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -25,6 +40,8 @@ public class CollectibleItem : MonoBehaviour
                 Inventory._items[itemIndex].hasCollected = true;
                 Inventory._items[itemIndex].icon = this.GetComponent<SpriteRenderer>().sprite;
                 Inventory._items[itemIndex].currentItem = this.gameObject;
+                inventorySlots[itemIndex].GetComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
+
                 Debug.Log("adding " + this.name + " to the inventory");
             }
             else

@@ -52,6 +52,22 @@ public class InventorySlot : MonoBehaviour
             //make cursor look for texture, hotspot, and cursormode before changing it
             Cursor.SetCursor(interactiveCursor, hotSpot, cursorMode);
         }
+
+        // keep inventory updated
+        int listMarker = int.Parse(this.name.Substring(this.name.Length - 1));
+        Debug.Log("checking slot" + listMarker);
+        checkInventory(listMarker);
+    }
+    void checkInventory(int listMarker)
+    {
+        for (int i = 0; i < Inventory._items.Length; i++)
+        {
+            if (i == listMarker && Inventory._items[listMarker].hasCollected == true)
+            {
+                this.GetComponent<SpriteRenderer>().sprite = Inventory._items[listMarker].icon;
+            }
+        }
+        
     }
     private void OnMouseDrag()
     {
@@ -109,14 +125,18 @@ public class InventorySlot : MonoBehaviour
             //iterate through player inventory to find corresponding gameobject
             for (int i = 0; i < Inventory._items.Length; i++)
             {
-                if(Inventory._items[i].icon == slotSprite && Inventory._items[i].currentItem.tag == "Food")
+                if(Inventory._items[i].icon == slotSprite && Inventory._items[i].itemName.Contains("foodItem") == true)
                 {
                      Debug.Log("yummery");
                      this.GetComponent<SpriteRenderer>().sprite = null;
                      //activate heart particle System
                      heartParticles.Play();
                      //deactivate the object so that she "eats" it
-                     Inventory._items[i].currentItem.SetActive(false);
+                     if (Inventory._items[i].currentItem != null && Inventory._items[i].currentItem.activeSelf == true)
+                     {
+                         Inventory._items[i].currentItem.SetActive(false);
+                     }
+                     
                      emptyPlayerInventorySlot(i);
                      
                 }

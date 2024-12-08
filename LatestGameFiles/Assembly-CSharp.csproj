@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\CollectibleItem.cs" />
     <Compile Include="Assets\Scripts\foodAppear.cs" />
     <Compile Include="Assets\Scripts\LookAtTarget.cs" />
+    <Compile Include="Assets\Scripts\keepInventory.cs" />
     <Compile Include="Assets\Scripts\TriggerPause.cs" />
     <Compile Include="Assets\Scripts\TimedAnimation.cs" />
     <Compile Include="Assets\Scripts\SkullDragDrop.cs" />

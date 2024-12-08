@@ -22,13 +22,21 @@ public class Inventory : MonoBehaviour
     private void Start()
     {
         _items = items;
-
+        /*
         //set the inventory slots
         for (int i = 0; i < inventorySlots.Length; i++)
         {
-            inventorySlots[i] = GameObject.Find("InventorySlot" + i);
+            if (GameObject.Find("InventorySlot" + i) != null)
+            {
+                inventorySlots[i] = GameObject.Find("InventorySlot" + i);
+                Debug.Log("adding slots");
+            }
+            
         }
+        */
+
     }
+    /*
     private void Update()
     {
         //iterate through inventory  
@@ -40,4 +48,5 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+    */
 }
