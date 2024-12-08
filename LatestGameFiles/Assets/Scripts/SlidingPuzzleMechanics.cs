@@ -37,6 +37,17 @@ public class slidingPuzzleMechanics: MonoBehaviour
 		createGamePieces(borderThickness, boardSize);
 
 	}
+	public void reShuffleBoard()
+	{
+		//shuffle board first 
+		shuffleBoard();
+		//reassign tile sprites
+		for (int i = 0; i < boardSize * boardSize; i++)
+		{
+			listOfPieces[i].gameObject.GetComponent<SpriteRenderer>().sprite = tileSprites[i];
+			//covers the case of the empty space. we'll put it in the bottom right corner
+		}
+	}
 
 	//shuffles pieces before creation
 	private void shuffleBoard()
