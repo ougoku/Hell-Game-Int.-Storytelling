@@ -10,6 +10,7 @@ public class CursorController : MonoBehaviour
     public Vector2 hoverCursorHotSpot;
     public Texture2D clickCursor;
     public Vector2 clickCursorHotSpot;
+    public AudioClip objectclick;
 
     // Start is called before the first frame update
     void Start()
@@ -34,5 +35,11 @@ public class CursorController : MonoBehaviour
     public void OnButtonCursorExit()
     {
         Cursor.SetCursor(defaultCursor, defaultCursorHotSpot, CursorMode.Auto);
+    }
+
+    // Audio
+    public void playAudio(AudioClip clip)   
+    {
+        GetComponent<AudioSource>().PlayOneShot(clip, .8f);    
     }
 }
