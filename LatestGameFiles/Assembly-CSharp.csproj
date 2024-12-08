@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\PlayerHealthKill.cs" />
     <Compile Include="Assets\Scripts\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\CheckInventorycs.cs" />
+    <Compile Include="Assets\Scripts\LustGetItem.cs" />
     <Compile Include="Assets\Scripts\Runner.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\TriggerAnimation.cs" />

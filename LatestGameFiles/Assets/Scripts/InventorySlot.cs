@@ -75,7 +75,7 @@ public class InventorySlot : MonoBehaviour
         //assigns the position of the object to the position of our mouse
         if(Input.GetMouseButton(0))
         {
-            transform.position = new Vector3(mousePosition.x, mousePosition.y, -5);
+            transform.position = new Vector3(mousePosition.x, mousePosition.y, 0);
         }
 
     }

@@ -63,8 +63,7 @@
               "RelativeToolTip": "Assets\\Scripts\\BileController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:11:19.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T04:11:19.801Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CollectibleItem.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T03:52:51.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T03:52:51.372Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "Assets\\Scripts\\TileController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAEMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T23:52:52.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T23:52:52.215Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "Assets\\Scripts\\foodAppear.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T22:11:21.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T22:11:21.137Z"
             },
             {
               "$type": "Document",
@@ -115,8 +111,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GluttonyChestOpen.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAAACgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T22:12:14.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T22:12:14.145Z"
             },
             {
               "$type": "Document",
@@ -128,8 +123,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Inventory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T22:50:29.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T22:50:29.539Z"
             }
           ]
         }
