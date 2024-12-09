@@ -1,0 +1,3 @@
+Here contains the scenes that were either used from the template or filled with assets that didn't make it into the final product.
+They've been left here just in case someone was curious and wanted to know where they went as well as to keep the repo clean and avoid confusion.
+The scenes outside of this folder are the only ones currently in the game build, but there was hard work that was put into progress of these scenes.
