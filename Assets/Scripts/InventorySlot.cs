@@ -28,11 +28,18 @@ public class InventorySlot : MonoBehaviour
     public Sprite slotSprite;
     public ParticleSystem heartParticles;
 
+    //sounds
+    private AudioSource audioSource; 
+	//create array to store sound
+	public AudioClip clickSound;
+
+
     // Start is called before the first frame update
     void Start()
     {
         //store initial object position
         startPos = this.transform.localPosition;
+        audioSource = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -57,6 +64,12 @@ public class InventorySlot : MonoBehaviour
         int listMarker = int.Parse(this.name.Substring(this.name.Length - 1));
         //Debug.Log("checking slot" + listMarker);
         checkInventory(listMarker);
+
+        //click sounds
+        if (Input.GetMouseButtonDown(0))
+        {
+            audioSource.PlayOneShot(clickSound, .5f);
+        }
     }
     void checkInventory(int listMarker)
     {

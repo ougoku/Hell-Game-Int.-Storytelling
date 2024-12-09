@@ -6,13 +6,20 @@ public class CollectibleItem : MonoBehaviour
 {
     //usually is the player
     public GameObject triggeringObject;
+    private AudioSource audioSource; 
+	//create array to store sound
+	public AudioClip collectSound;
     //item index of the object this script is on
     public int itemIndex;
     public GameObject[] inventorySlots = new GameObject[5];
 
 
+
     private void Start()
     {
+        //when game starts, assign audio source of empty game object to priv variable AudioSource
+		audioSource = GetComponent<AudioSource>();
+
         //set the inventory slots
         for (int i = 0; i < inventorySlots.Length; i++)
         {
@@ -34,6 +41,7 @@ public class CollectibleItem : MonoBehaviour
             //if we have enough room then add the item to our list
             if (itemIndex != -1)
             {
+                
                 this.gameObject.SetActive(false);
                 Inventory._items[itemIndex].itemName = this.name;
                 //reference the inventory script and set the item collection state as true
@@ -41,7 +49,7 @@ public class CollectibleItem : MonoBehaviour
                 Inventory._items[itemIndex].icon = this.GetComponent<SpriteRenderer>().sprite;
                 Inventory._items[itemIndex].currentItem = this.gameObject;
                 inventorySlots[itemIndex].GetComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
-
+                audioSource.PlayOneShot(collectSound, .5f);
                 Debug.Log("adding " + this.name + " to the inventory");
             }
             else
